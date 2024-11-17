@@ -1,4 +1,3 @@
-
 import { ContactsCollection } from '../db/models/contacts.js';
 
 import { calculatePaginationData } from '../utils/calculatePaginationData.js';
@@ -64,6 +63,7 @@ export const updateContact = async (contactId, payload, userId) => {
     payload,
     { new: true },
   );
+
   return contact;
 };
 
